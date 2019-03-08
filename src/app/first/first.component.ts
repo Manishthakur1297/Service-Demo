@@ -12,7 +12,7 @@ export class FirstComponent implements OnInit {
   ngOnInit() {
   }
 
-  abc(msg) : void
+  xyz(msg) : void
   {
     console.log(msg);
   }
