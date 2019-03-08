@@ -18,9 +18,8 @@ export class ThirdComponent implements OnInit {
 
   atoz(msg) : void
   {
-    //console.log(msg);
-    //let ls = new LogService();
     this.ls.logMessage(msg);
+    //this.db.logDB(msg);
   }
 
 }

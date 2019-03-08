@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LogService } from '../log.service';
+import { DbService } from '../db.service';
 
 @Component({
   selector: 'first',
@@ -20,6 +21,7 @@ export class FirstComponent implements OnInit {
   xyz(msg) : void
   {
     this.ls.logMessage(msg);
+    // this.db.logDB(msg);
   }
 
 }

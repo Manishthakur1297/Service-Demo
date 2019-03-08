@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LogService } from '../log.service';
+import { DbService } from '../db.service';
 
 @Component({
   selector: 'second',
@@ -8,7 +9,7 @@ import { LogService } from '../log.service';
 })
 export class SecondComponent implements OnInit {
 
-  constructor(private ls : LogService) 
+  constructor(private db : DbService) 
   {
     //this.ls = new LogService();
   }
@@ -18,9 +19,7 @@ export class SecondComponent implements OnInit {
 
   abc(msg) : void
   {
-    //console.log(msg);
-    //let ls = new LogService();
-    this.ls.logMessage(msg);
+    this.db.logDB(msg);
   }
 
 }

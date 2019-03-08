@@ -7,12 +7,12 @@ export class LogService {
 
   constructor() 
   {
-    console.log("Log Constructor invoked !!!");
+    console.log("Log 0 Constructor invoked !!!");
   }
 
   logMessage(msg) : void
   {
-    console.log("Log Service : "+msg);
+    console.log("Log 0 Service : "+msg);
   }
 
 }
