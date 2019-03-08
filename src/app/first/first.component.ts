@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LogService } from '../log.service';
 
 @Component({
   selector: 'first',
@@ -7,14 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
-  constructor() { }
+  //ls : LogService;
+  constructor(private ls : LogService) 
+  {
+    //this.ls = new LogService();
+  }
 
   ngOnInit() {
   }
 
   xyz(msg) : void
   {
-    console.log(msg);
+    this.ls.logMessage(msg);
   }
 
 }
