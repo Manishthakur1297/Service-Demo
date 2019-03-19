@@ -11,6 +11,8 @@ import { FourthComponent } from './fourth/fourth.component';
 import { FifthComponent } from './fifth/fifth.component';
 import { Log1Service } from './log1.service';
 import { Db1Service } from './db1.service';
+import { TestingdemoComponent } from './testingdemo/testingdemo.component';
+import { HelloModule } from './hello/hello.module';
 
 @NgModule({
   declarations: [
@@ -19,10 +21,11 @@ import { Db1Service } from './db1.service';
     SecondComponent,
     ThirdComponent,
     FourthComponent,
-    FifthComponent
+    FifthComponent,
+    TestingdemoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,HelloModule
   ],
   providers: [LogService,DbService,Log1Service,Db1Service],
   bootstrap: [AppComponent]
